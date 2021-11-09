@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    float a, b, c;
+    printf("Введите A и B через пробел:");
+    scanf("%f%f", &a, &b);
+    c = a; a = b; b = c;
+    printf("А = %f     ", a);
+    printf("     B = %f", b);
+    return 0;
+}
