@@ -3,11 +3,12 @@
 
 int main() 
 {
-    int A;
-    float res;
+    float A, tempA;
     printf("Введите значение A: ");
-    scanf("%d", &A);
-    res = pow((A * A * A * A), 2);
-    printf("Значение выражения равно %f", res);
+    scanf("%f", &A);
+    tempA = A * A;
+    tempA = tempA * tempA;
+    tempA = tempA * tempA;
+    printf("Значение выражения равно %f", tempA);
     return 0;
 }
