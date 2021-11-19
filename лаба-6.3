@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() 
+{
+    int a, b, c, buf;
+    printf("Введите значения A, B и C через пробел: ");
+    scanf("%d%d%d", &a, &b, &c);
+    buf = c;
+    c = a;
+    a = b;
+    b = buf;
+    printf("Новые значения: А = %d, B = %d, C = %d.", a, b, c);
+    return 0; 
+}
