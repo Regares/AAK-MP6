@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() 
+{
+    float A, tempA, tempA2;
+    printf("Введите значение A: ");
+    scanf("%f", &A);
+    tempA = A * A;
+    tempA2 = tempA * tempA * A;
+    tempA = tempA2 * tempA2;
+    tempA = tempA * tempA2;
+    printf("Значение выражения равно %f", tempA);
+    return 0;
+}
